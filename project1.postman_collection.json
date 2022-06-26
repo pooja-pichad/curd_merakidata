@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "c7deeead-31d5-4dbe-8bce-70d3510db3d6",
+		"name": "project1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get _data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/data",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "        {\"id\": \"70\",\n        \"name\": \"Understanding programming through recursion\",\n        \"logo\": \"http://bit.do/recursion-png\",\n        \"notes\": null,\n        \"days_to_complete\": \"45\",\n        \"short_description\": \"Iss course ko hum use kar kar recursions aur programming ki depth mei jayenge.\",\n        \"type\": \"html\",\n        \"course_type\": null,\n        \"lang_available\": [\n            \"en\"\n        ]\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/apidata1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"apidata1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put_data",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\"id\": \"70\",\n        \"name\": \" - Hindi\",\n        \"logo\": \"https://bit.ly/2FqFR4k\",\n        \"notes\": null,\n        \"days_to_complete\": \"3\",\n        \"short_description\": \"We will learn about the Constitution of NavGurukul.\",\n        \"type\": \"html\",\n        \"course_type\": null,\n        \"lang_available\": [\n            \"en\"\n        ]}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/dataput/70",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"dataput",
+						"70"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_data",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/delete/70",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"delete",
+						"70"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
